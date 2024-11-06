@@ -1,0 +1,12 @@
+target/
+Cargo.lock
+debug/
+release/
+rls/
+*.o
+.vscode/
+.idea/
+**/.DS_Store
+**/flamegraph.svg
+.env
+**/.DS_Store

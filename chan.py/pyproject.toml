@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Chan"
+version = "0.1.0"  # 请根据实际版本号调整
+description = "chan.py: 缠论框架"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Vespa314", email = "kylensherlock@gmail.com"},
+]
+keywords = ["chan.py", "quant", "Framework"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "baostock>=0.8.8",
+    "ipython>=8.5.0",
+    "matplotlib>=3.5.3",
+    "numpy>=1.23.3",
+    "pandas>=1.4.2",
+    "requests>=2.22.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Vespa314/chan.py"
+"Bug Tracker" = "https://github.com/Vespa314/chan.py/issues"
+
+[tool.setuptools]
+packages = [
+    "Bi",
+    "BuySellPoint",
+    "ChanModel",
+    "Combiner",
+    "Common",
+    "DataAPI",
+    "KLine",
+    "Math",
+    "Plot",
+    "Seg",
+    "ZS",
+]
+
+[tool.setuptools.package-data]
+"*" = ["*.py"]
